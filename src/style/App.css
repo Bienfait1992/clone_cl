@@ -135,17 +135,20 @@ body{
     flex-direction: column;
     gap: .5rem;
 }
-.tweet-title{
+.tweet-title {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
     font-size: 1rem;
+    text-decoration: none;
+    color: white;
 }
 
 .tweet-title svg{
     width: 1.2rem;
     height: auto;
+   
 }
 .tweet-title-author{
     font-size: 1rem;
@@ -197,6 +200,7 @@ body{
   font-family: 'Inter', sans-serif;  
   padding-bottom: 20px;
   margin-left: px;
+  
   
 }
 .button-sidebar{
@@ -313,8 +317,9 @@ body{
 .trendsidebar2{
    padding-left: 100px;
 }
-a :hover{
+a {
+    
+
     text-decoration: none;
-    color: white;
-    background-color: #1D9BF0;
+    
 }
