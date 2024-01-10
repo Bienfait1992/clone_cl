@@ -8,7 +8,7 @@ function Layout() {
     return (
         <>
             <LeftSidebar />  
-      <Outlet />
+      <div className='timeline'><Outlet /></div>
       <RightSidebar />
         </>
     );
