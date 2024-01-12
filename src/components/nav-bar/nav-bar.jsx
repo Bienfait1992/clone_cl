@@ -39,7 +39,7 @@ function Navbar(){
     </ul>
     </div>
     {/* </nav> */}
-    <button className=""> Tweet</button>
+    <button className="button-tweet"> Tweet</button>
     </>
      );
  }
