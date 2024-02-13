@@ -16,7 +16,7 @@ const reset = () => {
 
     <div className="tweet-editor-form">
         <input type="text" placeholder="what's happening" name="tweet" value={tweet} className="tweet-editor-input" onChange={handleChange}  />
-        {tweet}
+        {/* {tweet} */}
         
         <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
