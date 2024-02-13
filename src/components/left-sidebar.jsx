@@ -27,6 +27,7 @@ function LeftSidebar (){
             <p>@bradley_ </p>
             </div>
             <p>...</p>
+            <p className="text-amber-600">BONJOUR</p>
         </div> 
     
 

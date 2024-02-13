@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { Form } from "react-hook-form";
+
 
 function Tweeteditor(){
+const[tweet, setTweet] = useState('')
+const handleChange = (e) => {
+    setTweet(e.target.value)
+}
+const reset = () => {
+    setTweet('')
+}
     return(
 <div className="tweet-editor">
     <img src="src/images/Profile-Photo.png" className="avatar"/>
 
     <div className="tweet-editor-form">
-        <input type="text" placeholder="what's happening" className="tweet-editor-input"/>
+        <input type="text" placeholder="what's happening" name="tweet" value={tweet} className="tweet-editor-input" onChange={handleChange}  />
+        {tweet}
         
         <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
@@ -14,7 +24,7 @@ function Tweeteditor(){
             </div>
 
             
-<button className="button"> Tweet</button>
+<button className="button" type="post" onClick={reset} > Tweet</button>
             
             
         </div>
