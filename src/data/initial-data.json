@@ -1,3 +1,47 @@
 {
-    "schema": "bienfaiot"
+    "current-user": {
+        "avatar": "src/images/Profile-Photo.png",
+        "media": "src/images/icone/Media.png",
+        "gif":"src/images/icone/Gif.png",
+        "poll": "src/images/icone/Poll.png",
+        "emoji": "src/images/icone/Emoji.png",
+        "iconetime": "src/images/icone/Schedule.png",
+        "username": ""
+    },
+    "tweets": [
+        {
+            "id": 1,
+            "avatar": "src/images/image 1.png",
+            "username": "CNN",
+            "verified": "src/images/icone/Verified.png",
+            "@time": "@CNN",
+            "time": ".7m",
+            "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US stee industry and combat the global climate crisis",
+            "iconemessage": "src/images/icone/Reply.png",
+            "iconelike": "src/images/icone/React.png",
+            "share": "src/images/icone/Share.png",
+            "button":"src/images/icone/Buton.png",
+            "image": "",
+            "countmessage": "0",
+            "countlike": "10",
+            "countbutton": "20"
+        },
+        {
+            "id": 2,
+            "photoprofil": "src/images/image 1 (2).png",
+            "username": "The New York Times",
+            "verified": "src/images/icone/Verified.png",
+            "@time": "@nytimes",
+            "time": ".2h",
+            "tweet-text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
+            "iconemessage": "src/images/icone/Reply.png",
+            "iconelike": "src/images/icone/React.png",
+            "share": "src/images/icone/Share.png",
+            "button": "src/images/icone/Buton.png",
+            "image": "src/images/image 3.png",
+            "countmessage": "0",
+            "countlike": "10",
+            "countbutton": "20"
+        }
+    ]
 }

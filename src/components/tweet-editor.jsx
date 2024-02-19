@@ -20,7 +20,7 @@ const reset = () => {
         
         <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
-                <img src="src/images/Meta.png" className="tweet-editor-actions"/>
+                {/* <img src="src/images/Meta.png" className="tweet-editor-actions"/> */}
             </div>
 
             
