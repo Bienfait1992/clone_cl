@@ -16,10 +16,10 @@ function Tweets() {
                         <div className="tweet-content">
                             <div className="tweet-body">
                                 <div className="tweet-title">
-                                   {tweet.username}
-                
-                                
-                                    
+                                    {tweet.username}
+                                    <img src={tweet.verified} alt="" />
+                                    {tweet.cnn}
+                                    {tweet.time}
                                 </div>
 
                                 <div className="tweet-text"><p className="tweet-text">{tweet.text}</p></div>
@@ -79,7 +79,7 @@ function Tweets() {
 
 
 
-            <div className="tweet">
+            {/* <div className="tweet">
                 <div className="tweet-avatar"><img src="src/images/Tweet-Profile-Photo.png" alt="" /></div>
                 <div className="tweet-content">
                     <div className="tweet-body">
@@ -95,13 +95,13 @@ function Tweets() {
                         <img src="src/images/Tweet-Replies (3).png" alt="" className="tweet-action" />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 
 
 
-            <div className="tweet">
+            {/* <div className="tweet">
                 <div className="tweet-avatar"><img src="src/images/image 1 (1).png" alt="" /></div>
                 <div className="tweet-content">
                     <div className="tweet-body">
@@ -116,11 +116,11 @@ function Tweets() {
                         <img src="src/images/Tweet-Replies (3).png" alt="" className="tweet-action" />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 
-            <div className="tweet">
+            {/* <div className="tweet">
                 <div className="tweet-avatar"><img src="src/images/image 1 (1).png" alt="" /></div>
                 <div className="tweet-content">
                     <div className="tweet-body">
@@ -135,11 +135,11 @@ function Tweets() {
                         <img src="src/images/Tweet-Replies (3).png" alt="" className="tweet-action" />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 
-            <div className="tweet">
+            {/* <div className="tweet">
                 <div className="tweet-avatar"><img src="src/images/image 1 (1).png" alt="" /></div>
                 <div className="tweet-content">
                     <div className="tweet-body">
@@ -156,7 +156,7 @@ function Tweets() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
 
 

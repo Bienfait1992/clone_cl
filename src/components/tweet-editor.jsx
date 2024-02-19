@@ -21,6 +21,11 @@ const reset = () => {
         <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
                 {/* <img src="src/images/Meta.png" className="tweet-editor-actions"/> */}
+                <img src="src/images/icone/Media.png" alt="" className="tweet-editor-actions"/>
+                <img src="src/images/icone/Gif.png" alt="" className="tweet-editor-actions"/>
+                <img src="src/images/icone/Poll.png" alt="" className="tweet-editor-actions"/>
+                <img src="src/images/icone/Emoji.png" alt="" className="tweet-editor-actions"/>
+                <img src="src/images/icone/Schedule.png" alt="" className="tweet-editor-actions"/>
             </div>
 
             
