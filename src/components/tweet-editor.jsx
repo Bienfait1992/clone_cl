@@ -29,7 +29,7 @@ const reset = () => {
             </div>
 
             
-<button className="button" type="post" onClick={reset} > Tweet</button>
+<button className="button" type="submit" onClick={reset} > Tweet</button>
             
             
         </div>

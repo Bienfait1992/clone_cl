@@ -1,16 +1,27 @@
 import React from "react";
 import { Icone } from "./iconemessage";
 import jsondata from "../data/initial-data.json"
+import axios from "axios";
 
-
+const gat = async () => {
+try{
+const response = await axios.get('https://65d376c1522627d50108f5ab.mockapi.io/twitt/twitt')
+return response.data
+}
+catch (error){
+    alert("il ya une erreur")
+}
+};
+const tweetss = await gat()
 
 function Tweets() {
+
     const tweets = jsondata.tweets
     return (
         <div className="tweets">
 
             {
-                tweets.map((tweet) => (
+                tweetss.map((tweet) => (
                     <div className="tweet">
                         <div className="tweet-avatar"><img src={tweet.avatar} alt="" /></div>
                         <div className="tweet-content">
