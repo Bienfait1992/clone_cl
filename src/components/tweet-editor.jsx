@@ -4,7 +4,8 @@ import { useForm } from "react-hook-form";
 
 const postData = async (data) => {
     try {
-        const response = await axios.post("https://65d376c1522627d50108f5ab.mockapi.io/twitt/twitt", data);
+        const response = await axios.post('https://65d376c1522627d50108f5ab.mockapi.io/twitt/twitt', data);
+        // return response.data
     }
     catch (error) {
         alert("Une erreur s'est produit lors de l'envoi des données.")
@@ -19,8 +20,9 @@ function Tweeteditor() {
     const { register, handleSubmit, formState: { errors } } = useForm({ defaultValues: formtweet });
 
     const onSubmit = (data) => {
+        console.log(data);
         postData(data);
-        alert("Form Submitted");
+        // alert("Form Submitted");
     };
 
 
@@ -37,7 +39,7 @@ function Tweeteditor() {
                         <span style={{ color: "red" }} >{errors.tweet.message}</span>
                     )}
 
-                </form>
+            
 
 
 
@@ -53,10 +55,11 @@ function Tweeteditor() {
                     </div>
 
 
-                    <button className="button" type="submit" > Tweet</button>
+                    <button className="button" type="Submit" > Tweet</button>
 
 
                 </div>
+                </form>
             </div>
         </div>
 
