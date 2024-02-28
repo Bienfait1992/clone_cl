@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
 
 const postData = async (data) => {
     try {
@@ -10,6 +10,8 @@ const postData = async (data) => {
     catch (error) {
         alert("Une erreur s'est produit lors de l'envoi des données.")
     }
+
+    // console.log(data);
 }
 
 function Tweeteditor() {
@@ -19,10 +21,26 @@ function Tweeteditor() {
 
     const { register, handleSubmit, formState: { errors } } = useForm({ defaultValues: formtweet });
 
-    const onSubmit = (data) => {
-        console.log(data);
-        postData(data);
-        // alert("Form Submitted");
+    const onSubmit = (data ) => {
+        const obj = {
+            "avatar": "src/images/image 1 (2).png ",
+            "username": "CNN",
+            "verified": "src/images/icone/Verified.png",
+            "cnn": "@CNN",
+            "time": ".7m",
+            "text": `${data.tweet} `,
+            "iconemessage": "src/images/icone/Reply.png",
+            "iconelike": "src/images/icone/React.png",
+            "share": "src/images/icone/Share.png",
+            "button":"src/images/icone/Buton.png",
+            "image": " src/images/image 3.png",
+            "countmessage": "0",
+            "countlike": "10",
+            "countbutton": "20"
+        }
+        postData(obj);
+        // alert(data);
+        // {postData}
     };
 
 
