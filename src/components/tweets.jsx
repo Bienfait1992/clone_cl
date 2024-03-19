@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Icone } from "./iconemessage";
 import jsondata from "../data/initial-data.json"
 import axios from "axios";
+import tweetContext from "../context/tweet-context";
 
-const Api = async () => {
+/*const Api = async () => {
     try {
         const response = await axios.get('https://65d376c1522627d50108f5ab.mockapi.io/twitt/twitt')
         return response.data
@@ -12,17 +13,17 @@ const Api = async () => {
         alert("il ya une erreur")
     }
 };
-const tweetss = await Api()
+const tweetss = await Api()*/
 
 function Tweets() {
-
-    const tweets = jsondata.tweets
+    const tweetss = useContext(tweetContext).tweets;
+    //const tweets = jsondata.tweets
     return (
         <div className="tweets">
 
             {
-                tweetss.map((tweet) => (
-                    <div className="tweet">
+                tweetss.map((tweet, keyi) => (
+                    <div className="tweet" key={keyi}>
                         <div className="tweet-avatar"><img src={tweet.avatar} alt="" /></div>
                         <div className="tweet-content">
                             <div className="tweet-body">

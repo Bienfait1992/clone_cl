@@ -12,6 +12,8 @@ import Profile from './pages/profile';
 import More from './pages/more';
 import Lists from './pages/lists';
 
+import ContextProvider from "./components/provider-context/provider.jsx";
+
 const router= createBrowserRouter([
   {
     path: "/",
@@ -57,6 +59,9 @@ const router= createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <ContextProvider>
+      <RouterProvider router={router}/>
+    </ContextProvider>
   </React.StrictMode>
+  
 );

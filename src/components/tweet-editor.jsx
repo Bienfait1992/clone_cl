@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-const postData = async (data) => {
-    try {
-        const response = await axios.post('https://65d376c1522627d50108f5ab.mockapi.io/twitt/twitt', data);
-        // return response.data
-    }
-    catch (error) {
-        alert("Une erreur s'est produit lors de l'envoi des données.")
-    }
+import tweetContext from "../context/tweet-context";
 
-    // console.log(data);
-}
+
+
+
 
 function Tweeteditor() {
+    const {tweets} = useContext(tweetContext);
+    
+    const navigate = useNavigate();
+    const postData = async (data) => {
+        try {
+            const response = await axios.post('https://65d376c1522627d50108f5ab.mockapi.io/twitt/twitt', data);
+            // return response.data
+            navigate("/");
+            tweets.push(data);
+            console.log(tweets);
+        }
+        catch (error) {
+            alert("Une erreur s'est produit lors de l'envoi des données.")
+        }
+    
+        // console.log(data);
+    }
     const [formtweet, setFormTweet] = useState({
         tweet: "",
     })
